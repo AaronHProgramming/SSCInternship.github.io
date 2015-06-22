@@ -1,0 +1,6 @@
+*.pyc
+mapping/.idea/
+/__pycache__
+mapping/.ipynb_checkpoints
+/mapping/*.pyc
+/.ipynb_checkpoints
