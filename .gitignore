@@ -1,6 +1,8 @@
 *.pyc
 mapping/.idea/
+Misc/Miscellaneous/.idea/*
 /__pycache__
 mapping/.ipynb_checkpoints
+Misc/.ipynb_checkpoints/
 /mapping/*.pyc
 /.ipynb_checkpoints

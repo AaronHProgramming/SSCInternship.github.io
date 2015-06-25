@@ -62,6 +62,8 @@ Worked on random_walks.
 
 	# Week four:
 	Day fifteen: Finished downloading everything. Fixed up dbconnect.py.
+
+	Day sixteen: I taught simple python syntax to the other interns, and helped Jake learn programming logic.
 	
 ---
 # Specific commands in linux to remember
