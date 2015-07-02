@@ -14,6 +14,13 @@ def csv_to_list(path, csv_name):
 
 
 def make_query_str(table, filters):
+    """
+
+    :param table: name of table in database
+    :param filters: dictionary where the key is the column name and the value is a tuple of strings to be combined into a SQL condition
+    :return: a string that is valid SQL syntax to act on a database
+    """
+
     s = 'SELECT unixtime, lat, lon, crs, spd, MMSI, SHIPNAME'
 
     def make_sql(conditions):

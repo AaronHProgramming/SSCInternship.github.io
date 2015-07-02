@@ -17,6 +17,14 @@ table = 'obs'
 
 
 def create_connection(host, user, pwd, dbname):
+    '''
+
+    :param host:
+    :param user:
+    :param pwd:
+    :param dbname:
+    :return:
+    '''
     try:
         conn = MySQLdb.connect(host, user, pwd, dbname)
         print "connection obtained"

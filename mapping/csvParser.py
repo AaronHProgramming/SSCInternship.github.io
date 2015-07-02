@@ -55,7 +55,7 @@ def make_geojson_js(path, file_name):
     geojson_collection += "\n]}"
 
     #Write to file
-    with open('geojson.js', 'w') as bla:
+    with open('js/geojson.js', 'w') as bla:
         bla.writelines(geojson_collection)
 
     # Useless return statement
@@ -66,4 +66,5 @@ if __name__ == "__main__":
     #directory updated to be in same folder
     path = "csv/"
     file_name = "aisdata.csv"
-    make_geojson_js(path, file_name)
+    a = make_geojson_js(path, file_name)
+
