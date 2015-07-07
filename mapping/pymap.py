@@ -2,9 +2,17 @@ import os
 import csv
 from datetime import datetime
 import dbconnect
+import doctest
 
 
 def csv_to_list(path, csv_name):
+    """
+
+    :param path:
+    :param csv_name:
+    :return:
+    """
+
     lst = []
     with open(os.path.join(path, csv_name), 'r') as csv_file:
         reader = csv.reader(csv_file, delimiter=",")
@@ -35,6 +43,7 @@ def make_query_str(table, filters):
 
 
 def db_to_list(host, user, pwd, dbname, table, sql=''):
+
     if not sql:
         sql = 'SELECT unixtime, lat, lon, crs, spd, MMSI, SHIPNAME FROM {0}.{1};'.format(dbname, table)
 
@@ -55,6 +64,8 @@ def geolist_to_jsvar(lst):
 
 
 if __name__ == '__main__':
+
+    doctest.testmod()
 
     # TO RUN WITH AISDATA.CSV FILE:
     # p = 'csv/'
