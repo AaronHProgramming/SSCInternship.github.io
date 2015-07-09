@@ -7,7 +7,7 @@
 3. Learn [magic methods](http://rafekettler.com/magicmethods.html) in python.
 4. Use [this](http://interactivepython.org/runestone/static/pythonds/index.html) site to learn python data structures and more.
 5. Get [this book](http://www.amazon.com/Introduction-Algorithms-Edition-Thomas-Cormen/dp/0262033844).
-6. Utilize [this course](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/), especially it's last chapter.
+6. Utilize [this course](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/), similar to Math 240, especially it's last chapter.
 7. Read [this](http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/) and understand Python.
 
 
@@ -15,14 +15,16 @@
 ## Awesome resource links!
   * [The Python Tutorial](https://docs.python.org/2/tutorial/index.html) is a huge dictionary of python functions and explanations.
   * To install LAMP on Linux Mint, use [this](http://community.linuxmint.com/tutorial/view/486).
-  * In case I fall for a Python "gotcha": http://docs.python-guide.org/en/latest/writing/gotchas/
-  * Tips on optimization: https://wiki.python.org/moin/PythonSpeed/PerformanceTips
+  * In case I fall for a Python "gotcha", use [this](http://docs.python-guide.org/en/latest/writing/gotchas/).
+  * Need tips on optimization? Use [this](https://wiki.python.org/moin/PythonSpeed/PerformanceTips)
+
 ### How I learned how to post on GitHub.
 
     > I 
     > I 
     > Estoy confuso.
     > [Aaron Hager] - <<< This should've been blue
+
 ### Things that have gone wrongyfkuyful
 * bullets
 * todo los 
