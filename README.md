@@ -84,15 +84,15 @@ $ ipython notebook
  to open general ipython notebook
  
 ```sh
-ipython notebook file.ipynb
+$ ipython notebook file.ipynb
 ```
 to open specific .ipynb
 ```sh
-/opt/pycharm-community-4.5.1/bin/pycharm.sh
+$ /opt/pycharm-community-4.5.1/bin/pycharm.sh
 ```
 to open pycharm, './' launches a shell
 ```sh
-xdg-open { file | URL }
+$ xdg-open { file | URL }
 ```
 Opens a file, or window in your browser
 
