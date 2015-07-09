@@ -17,7 +17,9 @@
     `and this?`
 
 >>> TELL ME  your name
+
 >>your name
+
 >your name
 
 *That's it* `good luck`
@@ -37,7 +39,7 @@ Picture from mapping project:
 
 	Day four: I learned linear algebra. (ex. F(c(a + b)) = c(F(a) + F(b)).  I also learned python exception handling. As an exercise I coded how to calculate a dot product Xcomponent1 times Xcomponent2 + Ycomponent1 times Ycomponent2 = dot product.
 
-	Day five: I learned about decorators, functions that return functions. Worked on random_walks.
+	Day five: I learned about decorators, functions that return functions. Worked on [a relative link](Graphs/randomWalksAndExtra.ipynb).
 
 	# Week two:
 	Day six: I gained experience with linux, learned about how arrays work, created StackOverflow account, completed 2D random_walk program.
@@ -90,7 +92,7 @@ to open specific .ipynb
 ```sh
 $ /opt/pycharm-community-4.5.1/bin/pycharm.sh
 ```
-to open pycharm, './' launches a shell
+to open pycharm
 ```sh
 $ xdg-open { file | URL }
 ```
@@ -101,5 +103,4 @@ You can alias commands to speed up typing
 xdg-open --> cwin - "create window"
 
 ---
-
 
