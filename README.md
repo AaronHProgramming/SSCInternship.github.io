@@ -40,7 +40,7 @@ Day four: I learned linear algebra. (ex. F(c(a + b)) = c(F(a) + F(b)).  I also l
 
 As an exercise I coded how to calculate a dot product Xcomponent1 times Xcomponent2 + Ycomponent1 times Ycomponent2 = dot product.
 
-Day five: I learned about decorators, functions that return functions. Worked on [random walks](https://github.com/AaronHProgramming/SSCInternship.github.io/blob/master/Graphs/randomWalksAndExtra.ipynb).
+Day five: I learned about decorators, functions that return functions. Worked on [random walks](Graphs/randomWalksAndExtra.ipynb).
 
 # Week two:
 Day six: I gained experience with linux, learned about how arrays work, created StackOverflow account, completed 2D random_walk program.
