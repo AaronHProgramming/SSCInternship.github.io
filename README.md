@@ -28,7 +28,6 @@ Picture from mapping project:
 ![pic here](/mapping/mapping_points.png)
 ![hi scott](/mapping/mapping_cluster.png)
 
----
 
 	# Week one:	
 	Day one: I was taught Python from simple syntax to different methods that are useful such as len(), enumerate()
@@ -79,8 +78,8 @@ Picture from mapping project:
 	Day twenty-eight: Worked on clump builder, retaught linalg
 
 	Day twenty-nine: Signal Processing
-	
----
+
+
 # Specific commands in linux to remember
 ```sh
 $ ipython notebook
