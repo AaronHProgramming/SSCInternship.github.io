@@ -29,55 +29,55 @@ Picture from mapping project:
 ![hi scott](/mapping/mapping_cluster.png)
 
 
-	# Week one:	
-	Day one: I was taught Python from simple syntax to different methods that are useful such as len(), enumerate()
+# Week one:	
+Day one: I was taught Python from simple syntax to different methods that are useful such as len(), enumerate()
 
-	Day two: I learned about Linux and began reading about Generators, practiced python
+Day two: I learned about Linux and began reading about Generators, practiced python
 
-	Day three: I completed my prime number finder as a program and turned it into a generator and then adapted it to use the send() method, created a git account
+Day three: I completed my prime number finder as a program and turned it into a generator and then adapted it to use the send() method, created a git account
 
-	Day four: I learned linear algebra. (ex. F(c(a + b)) = c(F(a) + F(b)).  I also learned python exception handling. 
+Day four: I learned linear algebra. (ex. F(c(a + b)) = c(F(a) + F(b)).  I also learned python exception handling. 
 
-	As an exercise I coded how to calculate a dot product Xcomponent1 times Xcomponent2 + Ycomponent1 times Ycomponent2 = dot product.
+As an exercise I coded how to calculate a dot product Xcomponent1 times Xcomponent2 + Ycomponent1 times Ycomponent2 = dot product.
 
-	Day five: I learned about decorators, functions that return functions. Worked on [random walks](https://github.com/AaronHProgramming/SSCInternship.github.io/blob/master/Graphs/randomWalksAndExtra.ipynb).
+Day five: I learned about decorators, functions that return functions. Worked on [random walks](https://github.com/AaronHProgramming/SSCInternship.github.io/blob/master/Graphs/randomWalksAndExtra.ipynb).
 
-	# Week two:
-	Day six: I gained experience with linux, learned about how arrays work, created StackOverflow account, completed 2D random_walk program.
+# Week two:
+Day six: I gained experience with linux, learned about how arrays work, created StackOverflow account, completed 2D random_walk program.
 
-	Day seven: Took introductory javascript tutorial, progressed on reading in csv and formatting as geojson, having big troubles with plotting
+Day seven: Took introductory javascript tutorial, progressed on reading in csv and formatting as geojson, having big troubles with plotting
 
-	Day eight: Succeeded in plotting observations, cleaned up pycharm, 
+Day eight: Succeeded in plotting observations, cleaned up pycharm, 
 
-	Day nine: Consolidated files into folders and deleted useless files.
+Day nine: Consolidated files into folders and deleted useless files.
 
-	# Week three:
-	Day ten: Installed LAMP, learned about databases
+# Week three:
+Day ten: Installed LAMP, learned about databases
 
-	Day eleven: Loaded AISdata into database
+Day eleven: Loaded AISdata into database
 
-	Day twelve: Went to Network Security event, made python code get specific selects from the MyPHPAdmin
+Day twelve: Went to Network Security event, made python code get specific selects from the MyPHPAdmin
 
-	Day thirteen: Made map get points from database instead of file. Learned about functions as paramaters.
+Day thirteen: Made map get points from database instead of file. Learned about functions as paramaters.
 
-	Day fourteen: Transferred files from laptop to desktop. Redownloaded many things.
+Day fourteen: Transferred files from laptop to desktop. Redownloaded many things.
 
-	# Week four:
-	Day fifteen: Finished downloading everything. Fixed up dbconnect.py.
+# Week four:
+Day fifteen: Finished downloading everything. Fixed up dbconnect.py.
 
-	Day sixteen: I taught simple python syntax to the other interns, and helped Jake learn programming logic.
+Day sixteen: I taught simple python syntax to the other interns, and helped Jake learn programming logic.
 
-	Days seventeen through twenty-two: Redid the first 3 weeks by helping interns.
+Days seventeen through twenty-two: Redid the first 3 weeks by helping interns.
 
-	# Week five:
-	Days twenty-three through twenty-six: Worked on a clump builder, and helped teach Max and Jake more
+# Week five:
+Days twenty-three through twenty-six: Worked on a clump builder, and helped teach Max and Jake more
 
-	# Week six:
-	Day twenty-seven: Worked on clump builder, retaught linalg
+# Week six:
+Day twenty-seven: Worked on clump builder, retaught linalg
 
-	Day twenty-eight: Worked on clump builder, retaught linalg
+Day twenty-eight: Worked on clump builder, retaught linalg
 
-	Day twenty-nine: Signal Processing
+Day twenty-nine: Signal Processing
 
 
 # Specific commands in linux to remember
