@@ -8,12 +8,23 @@ import sys
 import csv
 from datetime import datetime
 
-
 host = "localhost"
 user = "root"
 pwd = "aaron"
 dbname = "aisdb"
-table = 'obs'
+class database:
+    def __init__(self, host, user, pwd, dbname):
+        self.host = host
+        self.user = user
+        self.pwd = pwd
+        self.dbname = dbname
+        self.table_lst = []
+
+    def new_table(self, tablename):
+        # Create new table
+
+        # then append it
+        self.table_lst.append(tablename)
 
 
 def create_connection(host, user, pwd, dbname):

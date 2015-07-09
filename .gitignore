@@ -5,4 +5,5 @@ Misc/Miscellaneous/.idea/*
 mapping/.ipynb_checkpoints
 Misc/.ipynb_checkpoints/
 /mapping/*.pyc
-/.ipynb_checkpoints
+*.ipynb_checkpoints*
+*.idea*

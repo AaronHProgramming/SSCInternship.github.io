@@ -34,11 +34,10 @@ Picture from mapping project:
 	Day two: I learned about Linux and began reading about Generators, practiced python
 
 	Day three: I completed my prime number finder as a program and turned it into a generator and then adapted it to use the send() method, created a git account
-hat is a
+
 	Day four: I learned linear algebra. (ex. F(c(a + b)) = c(F(a) + F(b)).  I also learned python exception handling. As an exercise I coded how to calculate a dot product Xcomponent1 times Xcomponent2 + Ycomponent1 times Ycomponent2 = dot product.
 
-	Day five: I learned about decorators, functions that return functions.
-Worked on random_walks.
+	Day five: I learned about decorators, functions that return functions. Worked on random_walks.
 
 	# Week two:
 	Day six: I gained experience with linux, learned about how arrays work, created StackOverflow account, completed 2D random_walk program.
@@ -65,20 +64,42 @@ Worked on random_walks.
 
 	Day sixteen: I taught simple python syntax to the other interns, and helped Jake learn programming logic.
 
-	Day seventeen through twenty-two: Redid the first 3 weeks by helping interns.
+	Days seventeen through twenty-two: Redid the first 3 weeks by helping interns.
+
+	# Week five:
+	Days twenty-three through twenty-six: Worked on a clump builder, and helped teach Max and Jake more
+
+	# Week six:
+	Day twenty-seven: Worked on clump builder, retaught linalg
+
+	Day twenty-eight: Worked on clump builder, retaught linalg
+
+	Day twenty-nine: Signal Processing
 	
 ---
 # Specific commands in linux to remember
-ipython notebook
-	*to open general ipython notebook
+```sh
+$ ipython notebook
+```
+ to open general ipython notebook
+ 
+```sh
 ipython notebook file.ipynb
-	* to open specific .ipynb
-cd /opt/pycharm-community-4.5.1/bin
-./pycharm.sh
-	* to open pycharm, './' launches a shell
+```
+to open specific .ipynb
+```sh
+/opt/pycharm-community-4.5.1/bin/pycharm.sh
+```
+to open pycharm, './' launches a shell
+```sh
 xdg-open { file | URL }
-	* Opens a file, or window in your browser
+```
+Opens a file, or window in your browser
+
 You can alias commands to speed up typing
+
 xdg-open --> cwin - "create window"
+
 ---
+
 

@@ -1,14 +1,16 @@
 __author__ = 'a-aron'
 
-def random_clump_matrix(size, time):
+def random_clump_matrix(size, time, layers):
     """
 
     :param size: size of the plane the clump will grow on
     :param time: number of iterations of clump growth
     :return: matrix where ones represent where the clump is and zeros where it is not
     """
+    # def create_growth_in_progress(val):
+
     def create_growth(matrix):
-        lst = [(-1, 1), (0, 1), (1, 1), (-1, 0), (1, 0),(-1, -1), (0, -1), (1, -1),]
+        lst = [(-1, 1), (0, 1), (1, 1), (-1, 0), (1, 0), (-1, -1), (0, -1), (1, -1), ]
         growth_matrix = np.full((size+2, size+2), 0)
         for row in range(1, size+1):
             for col in range(1, size+1):
@@ -32,10 +34,9 @@ def random_clump_matrix(size, time):
     rand_row = rand_col = size / 2
     matrix[rand_row][rand_col] = 1
     # simulate growth
-    for x in xrange(20):
+    for x in xrange(layers):
         mini_matrix = np.full((size+2, size+2), 0)
         mini_matrix[rand_row][rand_col] = 1
-        # pool = Pool()
         # mini_matrix = pool.map(create_growth, mini_matrix).get(60)
         # print mini_matrix
 
@@ -46,15 +47,11 @@ def random_clump_matrix(size, time):
 
         matrix += mini_matrix
     matrix[rand_row][rand_col] = 0
-    return matrix
+    return matrix[1:-1, 1:-1]
 
 if __name__ == "__main__":
-    from multiprocessing import Pool
     import numpy as np
-    #%matplotlib inline
     import matplotlib.pyplot as plt
-    graph_dim, growth_time = 20, 24
-    plt.matshow(random_clump_matrix(graph_dim, growth_time)[1:-1, 1:-1], cmap='Greens')
+    graph_dim, growth_time, num_forests = 25, 30, 4
+    plt.matshow(random_clump_matrix(graph_dim, growth_time, num_forests), cmap='Greens')
     plt.show()
-    # print random_clump_matrix(graph_dim, growth_time)[1:-1, 1:-1] # eliminate the edges
-    map(lambda x: x, [1])
