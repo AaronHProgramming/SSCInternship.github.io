@@ -37,9 +37,11 @@ Picture from mapping project:
 
 	Day three: I completed my prime number finder as a program and turned it into a generator and then adapted it to use the send() method, created a git account
 
-	Day four: I learned linear algebra. (ex. F(c(a + b)) = c(F(a) + F(b)).  I also learned python exception handling. As an exercise I coded how to calculate a dot product Xcomponent1 times Xcomponent2 + Ycomponent1 times Ycomponent2 = dot product.
+	Day four: I learned linear algebra. (ex. F(c(a + b)) = c(F(a) + F(b)).  I also learned python exception handling. 
 
-	Day five: I learned about decorators, functions that return functions. Worked on [a relative link](Graphs/randomWalksAndExtra.ipynb).
+	As an exercise I coded how to calculate a dot product Xcomponent1 times Xcomponent2 + Ycomponent1 times Ycomponent2 = dot product.
+
+	Day five: I learned about decorators, functions that return functions. Worked on [a relative link](/Graphs/randomWalksAndExtra.ipynb).
 
 	# Week two:
 	Day six: I gained experience with linux, learned about how arrays work, created StackOverflow account, completed 2D random_walk program.
