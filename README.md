@@ -9,6 +9,7 @@
 5. Get [this book](http://www.amazon.com/Introduction-Algorithms-Edition-Thomas-Cormen/dp/0262033844).
 6. Utilize [this course](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/), similar to Math 240, especially it's last chapter.
 7. Read [this](http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/) and understand Python.
+8. Keep up with [Project Euler](https://projecteuler.net/sign_in).
 
 
 
@@ -18,32 +19,10 @@
   * In case I fall for a Python "gotcha", use [this](http://docs.python-guide.org/en/latest/writing/gotchas/).
   * Need tips on optimization? Use [this](https://wiki.python.org/moin/PythonSpeed/PerformanceTips)
 
-### How I learned how to post on GitHub.
-
-    > I 
-    > I 
-    > Estoy confuso.
-    > [Aaron Hager] - <<< This should've been blue
-
-### Things that have gone wrongyfkuyful
-* bullets
-* todo los 
-
-```what does this do```
-
-    ``what about this``
-    `and this?`
-
->>> TELL ME  your name
-
->>your name
-
->your name
-
-*That's it* `good luck`
-
-Picture from mapping project:
+This picture from my mapping project show ship points rendered one at a time from a large source. (This picture doesn't show all of the source)
 ![pic here](/mapping/mapping_points.png)
+
+This picture shows a clustered version of the previous mapping project because the rendering of each single image takes too long.
 ![hi scott](/mapping/mapping_cluster.png)
 
 
