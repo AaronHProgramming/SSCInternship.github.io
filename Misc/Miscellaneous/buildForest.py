@@ -47,11 +47,12 @@ def random_clump_matrix(size, time, layers):
 
         matrix += mini_matrix
     matrix[rand_row][rand_col] = 0
+    print matrix[1:-1, 1:-1]
     return matrix[1:-1, 1:-1]
 
 if __name__ == "__main__":
     import numpy as np
     import matplotlib.pyplot as plt
-    graph_dim, growth_time, num_forests = 25, 30, 4
+    graph_dim, growth_time, num_forests = 30, 33, 100
     plt.matshow(random_clump_matrix(graph_dim, growth_time, num_forests), cmap='Greens')
     plt.show()

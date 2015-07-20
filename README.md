@@ -1,6 +1,12 @@
 # Aaron's 2015 Summer Internship
 ---
-### How to check markdown against how it looks is easy: [dillenger.io](dillinger.io)
+### How to check markdown against how it looks is easy: [dillinger.io](dillinger.io)
+
+### To unstage all files from using git add (-A as well):
+```sh
+$ git reset
+```
+
 ## TODO:
 1. Finish reading [this book](https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-4.html#%_toc_start).
 2. [Learn HTML and CSS basics](http://learn.shayhowe.com/html-css/building-your-first-web-page/).
@@ -10,6 +16,7 @@
 6. Utilize [this course](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/), similar to Math 240, especially it's last chapter.
 7. Read [this](http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/) and understand Python.
 8. Keep up with [Project Euler](https://projecteuler.net/sign_in).
+  * Fix if __name__ == '__main__': to automatically submit the results to the project euler webpage.
 
 
 
@@ -18,11 +25,12 @@
   * To install LAMP on Linux Mint, use [this](http://community.linuxmint.com/tutorial/view/486).
   * In case I fall for a Python "gotcha", use [this](http://docs.python-guide.org/en/latest/writing/gotchas/).
   * Need tips on optimization? Use [this](https://wiki.python.org/moin/PythonSpeed/PerformanceTips)
+  * Use Gilbert Strang and Khan Academy for linear algebra. Strang has a book called Introduction to Linear Algebra.
 
 This picture from my mapping project show ship points rendered one at a time from a large source. (This picture doesn't show all of the source)
 ![pic here](/mapping/mapping_points.png)
 
-This picture shows a clustered version of the previous mapping project because the rendering of each single image takes too long.
+This picture shows a clustered version of the previous mapping project because the rendering of each single image takes too long to display.
 ![hi scott](/mapping/mapping_cluster.png)
 
 
@@ -74,10 +82,15 @@ Day twenty-eight: Worked on clump builder, retaught linalg
 
 Day twenty-nine: Signal Processing
 
-Day thirty: Spent hours, updating and clarifying my README.md
+Day thirty: Spent hours updating and clarifying my README.md.
 
+# Week seven:
+Day thirty-one: Read Structure and Interpretation of Computer Programs
 
-# Specific commands in linux to remember
+Day thirty-two: Completed signal processing and linear algebra program
+
+# Specific commands in linux to remember:
+sudo, cd, rm, mv, cp, ps, ls, |
 ```sh
 $ ipython notebook
 ```
