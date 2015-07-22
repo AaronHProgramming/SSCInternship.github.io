@@ -10,18 +10,18 @@ $ git reset
 ## Things I learned
 1. Python
 2. Linux (OS)
-	-Using Bash
-	-Understanding OS structure i.e. Kernel, distributions
+   - Using Bash
+   - Understanding OS structure i.e. Kernel, distributions
 3. Reading from files and manipulating data
 4. Using a Database (MySQL)
-	-Learned SQL
+   - Learned SQL
 5. Linear Algebra
-	*Least Squares
-	*Matrix multiplication, addition, inversion, determinants
-	*Signal Processing
+   * Least Squares
+   * Matrix multiplication, addition, inversion, determinants
+   * Signal Processing
 6. Scheme syntax (Common Lisp, Clojure)
 7. C++
-	-Pointers
+   - Pointers
 8. 
 
 ## TODO:
