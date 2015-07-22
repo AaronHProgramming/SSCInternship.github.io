@@ -34,11 +34,14 @@ def make_query_str(table, filters):
     def make_sql(conditions):
         string = ''
         for k, v in conditions.iteritems():
+            if k == 'lat' or k == 'lon':
+                v[1], v[3] = min(v[1], v[3]), max(v[1], v[3])
             string += " AND {col} {oper} '{val1}' {_and} '{val2}'".format(
                 col=k, oper=v[0], val1=v[1], _and=v[2], val2=v[3])
         return string
 
     s += " FROM {table} WHERE 1{filt}".format(table=table, filt=make_sql(filters))
+    print s
     return s
 
 
@@ -89,6 +92,7 @@ if __name__ == '__main__':
     d = dict()
     d['SHIPNAME'] = ('=', 'TIE-FIGHTER', '', '')
     d['unixtime'] = ('BETWEEN', '0', 'and', '1403709097')
+    d['lon'] = ['BETWEEN', '0', 'AND', '-150']
     # columns = ['unixtime', 'lat', 'lon']
 
     sql = make_query_str(table, d)

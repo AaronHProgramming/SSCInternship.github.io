@@ -7,6 +7,23 @@
 $ git reset
 ```
 
+## Things I learned
+1. Python
+2. Linux (OS)
+	-Using Bash
+	-Understanding OS structure i.e. Kernel, distributions
+3. Reading from files and manipulating data
+4. Using a Database (MySQL)
+	-Learned SQL
+5. Linear Algebra
+	*Least Squares
+	*Matrix multiplication, addition, inversion, determinants
+	*Signal Processing
+6. Scheme syntax (Common Lisp, Clojure)
+7. C++
+	-Pointers
+8. 
+
 ## TODO:
 1. Finish reading [this book](https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-4.html#%_toc_start).
 2. [Learn HTML and CSS basics](http://learn.shayhowe.com/html-css/building-your-first-web-page/).

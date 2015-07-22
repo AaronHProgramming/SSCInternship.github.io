@@ -201,6 +201,8 @@ def complete_command(host, user, pwd, sql, dbname):
     return list_of_tuples
 
 
+if __name__ == "__main__":
+    create_db(host, user, pwd, "tempDB")
 
 # time1 = datetime.fromtimestamp(1403708746L).strftime("%Y-%m-%d %H:%M:%S")
 # time2 = datetime.fromtimestamp(1403708784L).strftime("%Y-%m-%d %H:%M:%S")
