@@ -20,7 +20,7 @@ $ git reset
    * Matrix multiplication, addition, inversion, determinants
    * Signal Processing
 6. Scheme syntax (Common Lisp, Clojure)
-7. C++
+7. C
    - Pointers
 8. 
 
