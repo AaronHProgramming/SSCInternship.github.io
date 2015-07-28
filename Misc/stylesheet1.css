@@ -1,0 +1,19 @@
+h1 {
+	color: #8b2252;
+}
+* {
+	background-color: #ffbbff;
+}
+img {
+	height: 160px;
+	width: 150px;
+}
+p {
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 1.83em;
+	color: #eee9e9;
+}
+div {
+	height: 160px;
+	width: 2000px;
+}
