@@ -18,6 +18,7 @@ def read_in_csv(path, file_name):
             lines.append(line)
     return lines
 
+
 def make_geojson_js(path, file_name):
     '''
     writes to geojson.js the data in path+file_name as a geojson
@@ -63,7 +64,7 @@ def make_geojson_js(path, file_name):
 
 # When run this will execute
 if __name__ == "__main__":
-    #directory updated to be in same folder
+    # directory updated to be in same folder
     path = "csv/"
     file_name = "aisdata.csv"
     a = make_geojson_js(path, file_name)

@@ -1,1 +1,12 @@
 __author__ = 'a-aron'
+second = [[], 'second']
+minute = [60, 'second']
+hour = [60, 'minute']
+s = second
+meter = [[], 'meter']
+kilometer = [1000, 'meter']
+aaron = [[], 'aaron']
+jakes = [10, 'aaron']
+jake = jakes
+kilogram = [[], 'kilogram']
+kg = kilogram

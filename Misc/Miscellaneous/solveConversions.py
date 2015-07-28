@@ -1,10 +1,8 @@
 __author__ = 'a-aron'
 import sys
 import os
-import csv
-
 path = '/home/a-aron/internship/summerInt/Misc/Miscellaneous/'
-instructionSet = ""
+instructionSet = "Create function:\nCreate base unit: Simply create name to represent a real-world unit\nCreate unit: Create a non-base unit to use in future functions\nAdd name: Add a name to a preexisting unit i.e. (seconds --> second)"
 
 def prepare_for_reimport(path, pyFile):
     """
@@ -15,7 +13,7 @@ def prepare_for_reimport(path, pyFile):
     """
     try:
         # So python doesn't know I already imported it
-        del sys.modules[pyFile[:]]
+        del sys.modules[pyFile[:len(pyFile)-3]]
         # So python doesn't just reuse the compiled version we have to delete it
         # BE VERY CAREFUL NOT TO TAKE OUT THIS 'c' below, if removed the entire .py will be deleted
         os.remove(os.path.join(path, pyFile + 'c'))
@@ -33,6 +31,83 @@ def backup_file(path, filename):
     with open(os.path.join(path, "backupFiles/backup" + filename), 'w') as backup:
         backup.write(lines)
 
+def name_not_taken(filename, var):
+    exec("import {} as file_with_var".format(filename[:len(filename)-3]))
+    return not var in dir(file_with_var)
+
+def name_is_taken(filename, var):
+    return not name_not_taken(filename, var)
+
+def is_base_unit(var):
+    if var == eval("cs.{}".format(var))[1]:
+        return True
+    else:
+        return False
+
+
+def convert_into_base_units(expression):
+    """
+    test after import
+    convert_into_base_units('hour', 80, 'kilometer')
+    """
+    def convert_unit_into_list(item):
+        if isinstance(item, str):
+            return eval("cS.{}".format(item))
+        else:
+            return item
+
+    if [] in expression:
+        index_of_empty_list = expression.index([])
+        expression[index_of_empty_list] = 1.0
+        return expression
+    else:
+        expression = map(convert_unit_into_list, expression)
+        print expression
+        num_list = [x for x in expression if isinstance(x, int)]
+        result_list = []
+        if num_list:
+            num = num_list[0]
+            result_list.append(num)
+            index = expression.index(num)
+            result_list = convert_into_base_units(expression[:index]) + result_list + convert_into_base_units(expression[index+1:])
+
+        else:
+            num_list = [1.0]
+            result_list = num_list + result_list
+        return result_list
+
+def convert_into_base_units2(expression):
+    def convert_unit_into_list(item):
+        if isinstance(item, int) or isinstance(item, float):
+            return item
+        elif [] in list(item):
+            def replace_empty_array(item):
+                if not item:
+                    return 1.0
+                return item
+            return map(replace_empty_array, item)
+        elif isinstance(item, str):
+            item = eval("cS.{}".format(item))
+            return convert_unit_into_list(item)
+        else:
+            my_other_list = []
+            for thing in item:
+                my_other_list.append(convert_unit_into_list(thing))
+            return my_other_list
+    my_list = []
+    for item in expression:
+        my_list.append(convert_unit_into_list(item))
+
+
+    return my_list
+
+def accessible_name(name):
+    return isinstance(name, str) and name in dir(cS)
+
+
+def check_answer():
+    return True
+
 
 if __name__ == "__main__":
 
@@ -42,14 +117,18 @@ if __name__ == "__main__":
     user_input = "!exit"
     while user_input != "exit":
 
-        backup_file(path, "conversionSolutions.py")
         prepare_for_reimport(path, "conversionSolutions.py")
         # Completes the re-import
         import conversionSolutions as cS
 
-        user_input = raw_input("Type in help for the help menu, exit to exit, or simply enter your command.").lower()
+
+        """ TESTING LOCATION JUST BELOW """
+        print convert_into_base_units2(['s', 'hour', 10, 'kg', 'kilometer'])
+
+
+        user_input = raw_input("Type in help for the help menu, exit to exit, or simply enter your command: ").lower()
         if user_input == "help":
-            user_input = raw_input("Would you like to know how to use this application or do you want to see a list of pre-built functions?(1,2)")
+            user_input = raw_input("Would you like to know how to use this application or do you want to see a list of pre-built items?(1,2): ")
             if user_input == "1":
                 print instructionSet
             elif user_input == "2":
@@ -60,7 +139,34 @@ if __name__ == "__main__":
             pass
 
         elif user_input == "create base unit":
-            pass
+            new_unit = raw_input("Type in your new unit ('unit_name'): ")
+            unit_rep = [[], new_unit]
+            with open(os.path.join(path, "conversionSolutions.py"), 'a') as f:
+                f.write("\n" + new_unit + " = " + str(unit_rep))
 
         elif user_input == "create unit":
-            pass
+            user_input = raw_input("Type in your unit in terms of a base unit ('name_of_unit # base_unit'): ")
+            # splits input at spaces and puts the input out into a list
+            user_input = user_input.split()
+            new_unit, unit_rep = user_input[0], user_input[1:]
+            unit_rep[0] = int(unit_rep[0])
+            if name_is_taken("conversionSolutions.py", unit_rep[1]):
+                keep_changes = raw_input(new_unit + " = " + str(unit_rep) + "\nKeep Changes?(y/n): ").lower()
+                if keep_changes == 'y':
+                    # Make permanent changes to file
+                    with open(os.path.join(path, "conversionSolutions.py"), 'a') as f:
+                        f.write("\n" + new_unit + " = " + str(unit_rep))
+            else:
+                print "Name {} doesn't exist yet.".format(unit_rep[1])
+
+        elif user_input == "add name":
+            user_input = raw_input("Type in your additional name for old unit ('alias' 'unit_name'): ").split()
+            new_alias, unit_rep = user_input[0], user_input[1]# eval("cS.{}".format(user_input[1]))
+            if name_is_taken("conversionSolutions.py", unit_rep):
+                with open(os.path.join(path, "conversionSolutions.py"), 'a') as f:
+                    if name_not_taken("conversionSolutions.py", new_alias):
+                        f.write("\n" + new_alias + " = " + str(unit_rep))
+                    else:
+                        print "Name {} already taken.".format(new_alias)
+            else:
+                print "Name {} doesn't exist yet.".format(unit_rep)

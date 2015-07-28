@@ -40,7 +40,7 @@ if __name__ == "__main__":
     # For infinite loop:
     import pretendFunctions as pF
     #   j <= len(dir(pF)[dir(pF).index('func0'):len(dir(pF))])
-    while j <= 5:
+    while j <= 500:
         """
         THIS SECTION RE-IMPORTS pretendFunctions.py
         """
