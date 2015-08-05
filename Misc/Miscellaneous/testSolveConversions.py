@@ -16,7 +16,7 @@ class test_solve_conversions(unittest.TestCase):
 
     def test_convert_into_base_units(self):
 
-        self.assertEquals(solveConversions.convert_into_base_units(['s', 'hour', 10, 'kg', 'kilometer']), ['second', 'second', 10000.0 / 3600, 'kilogram', 'meter'])
+        self.assertEquals(solveConversions.convert_into_base_units(['hour', 'hour', 12960, 'kg', 'kilometer']), ['second', 'second', 1.0, 'kilogram', 'meter'])
 
 if __name__ == "__main__":
     unittest.main()

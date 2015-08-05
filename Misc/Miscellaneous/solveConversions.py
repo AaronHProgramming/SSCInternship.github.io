@@ -4,6 +4,7 @@ import os
 path = '/home/a-aron/internship/summerInt/Misc/Miscellaneous/'
 instructionSet = "Create function:\nCreate base unit: Simply create name to represent a real-world unit\nCreate unit: Create a non-base unit to use in future functions\nAdd name: Add a name to a preexisting unit i.e. (seconds --> second)"
 
+
 def prepare_for_reimport(path, pyFile):
     """
     Eliminates current import of pyFile
@@ -44,40 +45,34 @@ def is_base_unit(var):
     else:
         return False
 
-
-def convert_into_base_units(expression):
-    """
-    test after import
-    convert_into_base_units('hour', 80, 'kilometer')
-    """
-    def convert_unit_into_list(item):
-        if isinstance(item, str):
-            return eval("cS.{}".format(item))
-        else:
-            return item
-
-    if [] in expression:
-        index_of_empty_list = expression.index([])
-        expression[index_of_empty_list] = 1.0
-        return expression
+def merge_expression(expression):
+    units_on_left = []
+    units_on_right = []
+    num = 1.0
+    if not isinstance(expression, list):
+        units_on_right.append(expression)
     else:
-        expression = map(convert_unit_into_list, expression)
-        print expression
-        num_list = [x for x in expression if isinstance(x, int)]
+        num_list = [x for x in expression if isinstance(x, int) or isinstance(x, float)]
         result_list = []
-        if num_list:
-            num = num_list[0]
-            result_list.append(num)
-            index = expression.index(num)
-            result_list = convert_into_base_units(expression[:index]) + result_list + convert_into_base_units(expression[index+1:])
+        num = num_list[0]
+        result_list.append(num)
+        index = expression.index(num)
+        units_on_left = []
+        units_on_right = []
+        for item in expression[:index]:
+            multiplier, mult_units, div_units = merge_expression(item)
+            # Do the opposite of the name because this is what is to the left of the num
+            num = num / multiplier
+            units_on_left = units_on_left + mult_units
+            units_on_right = units_on_right + div_units
+        for item in expression[index+1:]:
+            multiplier, mult_units, div_units = merge_expression(item)
+            num = num * multiplier
+            units_on_left = units_on_left + div_units
+            units_on_right = units_on_right + mult_units
+    return num, units_on_right, units_on_left
 
-        else:
-            num_list = [1.0]
-            result_list = num_list + result_list
-        return result_list
-
-def convert_into_base_units2(expression):
-    def convert_unit_into_list(item):
+def convert_unit_into_list(item):
         if isinstance(item, int) or isinstance(item, float):
             return item
         elif [] in list(item):
@@ -94,12 +89,15 @@ def convert_into_base_units2(expression):
             for thing in item:
                 my_other_list.append(convert_unit_into_list(thing))
             return my_other_list
+
+def convert_into_base_units(expression):
     my_list = []
     for item in expression:
         my_list.append(convert_unit_into_list(item))
+    num, mult_units, div_units = merge_expression(my_list)
+    div_units.append(num)
+    return div_units + mult_units
 
-
-    return my_list
 
 def accessible_name(name):
     return isinstance(name, str) and name in dir(cS)
@@ -123,7 +121,7 @@ if __name__ == "__main__":
 
 
         """ TESTING LOCATION JUST BELOW """
-        print convert_into_base_units2(['s', 'hour', 10, 'kg', 'kilometer'])
+        print convert_into_base_units(['hour', 'hour', 12960, 'kg', 'kilometer'])
 
 
         user_input = raw_input("Type in help for the help menu, exit to exit, or simply enter your command: ").lower()

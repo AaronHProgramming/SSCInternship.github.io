@@ -1,0 +1,42 @@
+html {
+	background-color: #add8e6;
+	font-family: Circula;
+	font-size: 30px;
+	color: #303030;
+}
+#leftside {
+	margin-left: 40px;
+	width: 440px;
+	float: left;
+}
+#galaxyDiv {
+	width: 900px;
+	float: left;
+}
+#galaxy {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 600px;
+	width: 800px;
+}
+#rightside {
+	margin-left: 1300px;
+	width: 440px;
+}
+h4 {
+	text-decoration: underline;
+}
+#quotes {
+	font-style: italic;
+}
+#intro {
+	clear: left;
+	text-align: center;
+	font-size: 45px;
+}
+#OpeningBlock {
+	margin-top: 50px;
+	height: 650px;
+}
+

@@ -125,6 +125,10 @@ to open pycharm
 $ xdg-open { file | URL }
 ```
 Opens a file, or window in your browser
+```sh
+$ scheme --load path/filename
+```
+Executes a scheme program and enters the environment
 
 You can alias commands to speed up typing
 
