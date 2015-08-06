@@ -22,17 +22,21 @@ $ git reset
 6. Scheme syntax (Common Lisp, Clojure)
 7. C
    - Pointers
-8. 
+8. HTML
+9. CSS
+   - [Available Colors](http://www.color-hex.com/color-names.html)
+   - [Nice fonts](http://sixrevisions.com/resources/professional-clean-fonts-designs/)
 
 ## TODO:
 1. Finish reading [this book](https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-4.html#%_toc_start).
 2. [Learn HTML and CSS basics](http://learn.shayhowe.com/html-css/building-your-first-web-page/).
 3. Learn [magic methods](http://rafekettler.com/magicmethods.html) in python.
-4. Use [this](http://interactivepython.org/runestone/static/pythonds/index.html) site to learn python data structures and more.
-5. Get [this book](http://www.amazon.com/Introduction-Algorithms-Edition-Thomas-Cormen/dp/0262033844).
-6. Utilize [this course](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/), similar to Math 240, especially it's last chapter.
-7. Read [this](http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/) and understand Python.
-8. Keep up with [Project Euler](https://projecteuler.net/sign_in).
+4. Finish this [C tutorial](http://www.cprogramming.com/tutorial/c/lesson1.html)
+5. Use [this](http://interactivepython.org/runestone/static/pythonds/index.html) site to learn python data structures and more.
+6. Get [this book](http://www.amazon.com/Introduction-Algorithms-Edition-Thomas-Cormen/dp/0262033844).
+7. Utilize [this course](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/), similar to Math 240, especially it's last chapter.
+8. Read [this](http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/) and understand Python.
+9. Keep up with [Project Euler](https://projecteuler.net/sign_in).
   * Fix if __name__ == '__main__': to automatically submit the results to the project euler webpage.
 
 
@@ -129,6 +133,11 @@ Opens a file, or window in your browser
 $ scheme --load path/filename
 ```
 Executes a scheme program and enters the environment
+```sh
+$ sudo apt-get install xcalib
+$ xcalib -i -a
+```
+Inverts the primary screen(-invert -alter)
 
 You can alias commands to speed up typing
 
