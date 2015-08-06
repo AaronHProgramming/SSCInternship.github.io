@@ -47,6 +47,7 @@ $ git reset
   * In case I fall for a Python "gotcha", use [this](http://docs.python-guide.org/en/latest/writing/gotchas/).
   * Need tips on optimization? Use [this](https://wiki.python.org/moin/PythonSpeed/PerformanceTips)
   * Use Gilbert Strang and Khan Academy for linear algebra. Strang has a book called Introduction to Linear Algebra.
+  * Important for [conventions and file sorting](http://www.jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/)
 
 This picture from my mapping project show ship points rendered one at a time from a large source. (This picture doesn't show all of the source)
 ![pic here](/mapping/mapping_points.png)
