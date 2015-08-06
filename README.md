@@ -110,6 +110,20 @@ Day thirty-one: Read Structure and Interpretation of Computer Programs
 
 Day thirty-two: Completed signal processing and linear algebra program
 
+# Week eight:
+Read SICP
+Worked on basic scheme and basic C programs.
+Worked on program to write to and execute other programs in Python.
+
+# Week nine:
+Read SICP.
+Worked on program to write to and execute other programs in Python.
+
+# Week ten:
+I worked on learning HTML and CSS.
+Worked on figuring out permutations and combinations with replacement and without replacement.
+Last day: Made a dual-boot on my laptop by adding Linux Mint, tried to install rEFInd (don't know if it did anything)
+
 # Specific commands in linux to remember:
 sudo, cd, rm, mv, cp, ps, ls, |
 ```sh
