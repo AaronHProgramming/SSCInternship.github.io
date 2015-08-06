@@ -123,7 +123,7 @@ Worked on program to write to and execute other programs in Python.
 # Week ten:
 I worked on learning HTML and CSS.
 Worked on figuring out permutations and combinations with replacement and without replacement.
-Last day: Made a dual-boot on my laptop by adding Linux Mint, tried to install rEFInd (don't know if it did anything)
+Last day: Made a dual-boot on my laptop by adding Linux Mint, tried to install rEFInd (don't know if it did anything), used chkdsk and gparted to partition the memory.
 
 # Specific commands in linux to remember:
 sudo, cd, rm, mv, cp, ps, ls, |
